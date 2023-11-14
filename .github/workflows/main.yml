@@ -1,0 +1,37 @@
+name: Deploy to Namecheap
+
+on:
+  push:
+    branches:
+      - master  # Adjust this to the branch you want to trigger the deployment from
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16 # Updated to the latest LTS version
+          
+      - name: Install dependencies
+        run: npm ci # Use npm ci instead of npm install for faster and more reliable installation
+        env:
+          NODE_ENV: production # Set the environment variable to production
+        
+      - name: Build the app
+        run: npm run build
+        
+      - name: Deploy to Namecheap
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0 # Updated to the latest version
+        with:
+          server: 'ftp.greatifehangoutcommunity.com'
+          username: 'Tobi@greatifehangoutcommunity.com'
+          password: 'Titilayo123#'
+          server-dir: /public_html/  # Change this to your desired directory
+          local-dir: build/
+          exclude: '*.map'
