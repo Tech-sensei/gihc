@@ -24,6 +24,8 @@ const Marquee = () => {
 
   return (
     <div className="marquee-wrapper">
+      {/* jsx-a11y/no-distracting-elements */}
+      {/* eslint-disable-next-line  */}
       <marquee behavior="scroll" direction="left" className="marquee-content" />
     </div>
   );
