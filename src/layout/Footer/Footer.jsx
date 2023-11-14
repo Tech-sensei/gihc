@@ -48,10 +48,10 @@ const Footer = () => {
                   <Link to="/team">Our Team</Link>
                 </li>
                 <li>
-                  <a href="#">Events/Activities</a>
+                  <a href="/">Events/Activities</a>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <a href="/">FAQs</a>
                 </li>
               </ul>
             </div>
@@ -60,10 +60,10 @@ const Footer = () => {
               <h3>Support Us</h3>
               <ul>
                 <li>
-                  <a href="#">Partner with us</a>
+                  <a href="/">Partner with us</a>
                 </li>
                 <li>
-                  <a href="#">Sponsor</a>
+                  <a href="/">Sponsor</a>
                 </li>
               </ul>
             </div>

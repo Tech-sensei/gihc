@@ -6,8 +6,8 @@ import About from "./pages/About/About";
 import Home from "./pages/Home/Home";
 import Team from "./pages/Team/Team";
 import AppLayout from "./layout/Applayout";
-import { useGlobalContext } from "./contexts/context";
-import Loading from "./components/Loading/Loading";
+// import { useGlobalContext } from "./contexts/context";
+// import Loading from "./components/Loading/Loading";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const { isLoading } = useGlobalContext();
+  // const { isLoading } = useGlobalContext();
 
   return (
     <div className="App" id="scroll">
