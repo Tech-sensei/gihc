@@ -1,0 +1,167 @@
+.teamSection {
+  .swiper {
+    width: 1000px;
+    height: 100%;
+    @media screen and (max-width: 650px) {
+      height: 400px;
+      width: 100%;
+    }
+  }
+
+  .swiper-slide {
+    height: 400px !important;
+    line-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    &--header {
+      width: 500px;
+      @media screen and (max-width: 650px) {
+        width: 100%;
+      }
+      h2 {
+        font-family: var(--heading-font);
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        @media screen and (max-width: 650px) {
+          font-size: 26px;
+        }
+      }
+    }
+
+    &--content {
+      height: auto;
+      width: 100%;
+      .past__speaker--body {
+        position: relative;
+        background-color: rgb(75 85 99/ 1);
+        overflow: hidden;
+        cursor: grab;
+        border-radius: 0.5rem;
+        height: 400px;
+        width: 326px;
+
+        &-menu {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: linear-gradient(
+            180deg,
+            rgba(1, 12, 47, 0) 68.01%,
+            var(--secondary-color) 100%
+          );
+          transition: all 0.3s ease-in-out;
+          z-index: 10;
+        }
+
+        .past__speaker--list {
+          box-sizing: border-box;
+          display: block;
+          overflow: hidden;
+          width: initial;
+          height: 450px;
+          background: none;
+          opacity: 1;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          position: relative;
+
+          .past__speaker--item {
+            box-sizing: border-box;
+            display: block;
+            width: initial;
+            height: initial;
+            background: none;
+            opacity: 1;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            padding-top: 100%;
+
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              box-sizing: border-box;
+              padding: 0;
+              border: none;
+              margin: auto;
+              display: block;
+              width: 0;
+              height: 0;
+              min-width: 100%;
+              max-width: 100%;
+              min-height: 100%;
+              max-height: 100%;
+              transition-property: all;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 0.15s;
+              transition-delay: 0s;
+            }
+          }
+        }
+
+        .past__speaker--bio {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: 10;
+          padding: 2rem;
+          color: rgb(229 231 235/ 1);
+
+          h3 {
+            font-weight: 900;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin: 0.75rem 0 0.25rem;
+          }
+
+          p {
+            font-weight: 300;
+            font-size: 0.875rem;
+            line-height: 1.25;
+            text-align: initial;
+          }
+        }
+      }
+    }
+
+    .teamSection__btn {
+      //   display: flex;
+      //   align-items: center;
+      //   justify-content: center;
+      //   gap: 0.5rem;
+      //   min-width: 160px;
+      //   color: hsl(0, 0%, 0%);
+      //   padding: 10px 16px;
+      //   font-weight: var(--font-bold);
+      //   font-size: 0.85rem;
+      //   cursor: pointer;
+      //   transition: all 0.3s ease 0s;
+      //   position: relative;
+      //   outline: none;
+      //   border-radius: 10px;
+      //   border: 2px solid hsl(0, 0%, 0%);
+      //   background: hsl(0deg 0% 100%);
+      //   box-shadow: hsl(0, 0%, 0%) 5px 5px;
+      width: fit-content;
+      margin: 0 auto;
+    }
+  }
+}

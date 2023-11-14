@@ -1,0 +1,49 @@
+.about {
+  &__container {
+    &-contents {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .mission-vision {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        .about-mission {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          h3 {
+            font-size: 1.5rem;
+            font-weight: var(--font-semi-bold);
+            color: var(--primary-color);
+          }
+        }
+      }
+
+      .about-evolve {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        h3 {
+          font-size: 1.5rem;
+          font-weight: var(--font-semi-bold);
+          color: var(--primary-color);
+        }
+        p {
+          line-height: 1.6;
+          text-align: justify;
+          span {
+            font-weight: var(--font-semi-bold);
+            margin-bottom: 1rem;
+            display: block;
+            text-decoration: wavy;
+          }
+        }
+      }
+    }
+  }
+}

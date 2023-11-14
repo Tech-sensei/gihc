@@ -1,0 +1,108 @@
+.sponsor {
+  &__container {
+    @media screen and (max-width: 768px) {
+      // max-width: 1300px;
+      width: calc(100% - 2rem);
+      margin-inline: auto;
+    }
+    &--content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      place-items: center;
+      @media screen and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+      &-left {
+        background-color: hsl(270, 19%, 14%, 0.6);
+        background-image: url("../../assets/images/Brand-Pattern-3.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+        display: grid;
+        gap: 0.5rem;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        @media screen and (min-width: 768px) {
+          padding: 2rem;
+          place-content: center;
+        }
+
+        .left-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          @media screen and (min-width: 768px) {
+            width: 533px;
+            align-items: flex-start;
+          }
+          & > span {
+            color: #ed893e;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            // text-align: center;
+            @media screen and (min-width: 768px) {
+              text-align: left;
+              align-items: flex-start;
+            }
+          }
+          h3 {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 160%;
+            text-align: center;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 768px) {
+              font-size: 40px;
+              text-align: left;
+            }
+          }
+          p {
+            font-weight: 400;
+            line-height: 160%;
+            text-align: justify;
+            @media screen and (min-width: 768px) {
+              font-size: 1rem;
+              text-align: left;
+            }
+          }
+          button {
+            margin-top: 1rem;
+            width: max-content;
+
+            @media screen and (min-width: 768px) {
+            }
+          }
+        }
+        &--btn {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: 1.5rem;
+          }
+        }
+      }
+      &-right {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.order {
+  order: -1;
+  @media screen and (min-width: 768px) {
+    order: 1;
+  }
+}
