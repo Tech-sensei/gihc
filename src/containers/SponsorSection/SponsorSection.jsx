@@ -3,6 +3,7 @@ import "./SponsorSection.scss";
 import Img1 from "../../assets/images/Rectangle-12.png";
 import { Link } from "react-router-dom";
 
+// Content
 const SponsorSection = () => {
   return (
     <>
