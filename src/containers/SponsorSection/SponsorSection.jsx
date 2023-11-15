@@ -1,6 +1,7 @@
 import React from "react";
 import "./SponsorSection.scss";
 import Img1 from "../../assets/images/Rectangle-12.png";
+import { Link } from "react-router-dom";
 
 const SponsorSection = () => {
   return (
@@ -56,9 +57,14 @@ const SponsorSection = () => {
                     <span>Sponsor GICH</span>
                   </button>
 
-                  <button className="btn">
-                    <span>Partner with GICH</span>
-                  </button>
+                  <Link
+                    to="https://drive.google.com/file/d/1B8mbiknGS_CpwZlu3Txid5XvqCgeQZNE/view?usp=drivesdk"
+                    target="_blank"
+                  >
+                    <button className="btn">
+                      <span>Partner with GICH</span>
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>

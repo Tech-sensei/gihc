@@ -1,39 +1,43 @@
-.team {
+.abujaSection {
   &__container {
-    &--desc {
-      max-width: 90%;
-      margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
 
-      @media screen and (min-width: 650px) {
-        width: 90%;
+    &--header {
+      width: 500px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      h2 {
+        font-family: var(--heading-font);
+        font-size: 40px;
+        font-weight: 600;
+        text-align: center;
+        color: #fff;
+        @media screen and (max-width: 768px) {
+          font-size: 26px;
+        }
       }
     }
 
-    &-contents {
+    &--content {
+      height: auto;
+      width: 100%;
       display: grid;
-      place-items: center;
-      margin: 5rem 0;
-      gap: 2.5rem;
-      grid-template-columns: repeat(1, minmax(0, 1fr));
-
-      @media screen and (min-width: 650px) {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      @media screen and (min-width: 968px) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      .team__contents-body {
+      place-content: center;
+      .past__speaker--body {
         position: relative;
         background-color: rgb(75 85 99/ 1);
         overflow: hidden;
-        cursor: pointer;
+        cursor: grab;
         border-radius: 0.5rem;
         height: 400px;
-        width: 300px;
+        width: 326px;
 
-        .team__body-menu {
+        &-menu {
           position: absolute;
           top: 0;
           left: 0;
@@ -42,13 +46,13 @@
           background: linear-gradient(
             180deg,
             rgba(1, 12, 47, 0) 68.01%,
-            var(--primary-color) 100%
+            var(--secondary-color) 100%
           );
           transition: all 0.3s ease-in-out;
           z-index: 10;
         }
 
-        .team__list {
+        .past__speaker--list {
           box-sizing: border-box;
           display: block;
           overflow: hidden;
@@ -61,7 +65,7 @@
           padding: 0;
           position: relative;
 
-          .team__item {
+          .past__speaker--item {
             box-sizing: border-box;
             display: block;
             width: initial;
@@ -131,74 +135,6 @@
                 color: var(--primary-color);
               }
             }
-          }
-        }
-      }
-    }
-  }
-}
-
-.header-bg {
-  height: 100vh;
-  width: 100%;
-  box-shadow: var(--dark-shadow);
-  background-color: hsl(16deg 43.27% 15%);
-  // background-color: hsl(262, 33%, 16%);
-
-  @media screen and (max-width: 650px) {
-    background-position: right;
-  }
-
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-
-    &-contents {
-      h1 {
-        font-size: 5rem;
-        font-family: var(--heading-font);
-        @media screen and (max-width: 650px) {
-          margin-bottom: var(--mb-2);
-          font-size: 2.7rem;
-        }
-      }
-    }
-
-    .scroll-btn {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      flex-direction: column;
-      position: absolute;
-      bottom: 1rem;
-      color: var(--clr-primary-8);
-      cursor: pointer;
-
-      svg {
-        font-size: 1.4rem;
-        animation: scroll 5s infinite;
-
-        @keyframes scroll {
-          0% {
-            opacity: 0;
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-          }
-
-          60% {
-            opacity: 1;
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-          }
-
-          100% {
-            opacity: 0;
-            -webkit-transform: translateY(100%);
-            transform: translateY(100%);
           }
         }
       }

@@ -2,7 +2,16 @@
   padding: 10rem 0 4rem;
   @media screen and (max-width: 768px) {
     padding: 7rem 0 4rem;
-    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    @media screen and (max-width: 768px) {
+      gap: 3rem;
+      flex-direction: column;
+    }
   }
   &__container {
     &--contents {

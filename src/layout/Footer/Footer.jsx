@@ -60,10 +60,22 @@ const Footer = () => {
               <h3>Support Us</h3>
               <ul>
                 <li>
-                  <a href="/">Partner with us</a>
+                  <a
+                    href="https://drive.google.com/file/d/1B8mbiknGS_CpwZlu3Txid5XvqCgeQZNE/view?usp=drivesdk"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Partner with us
+                  </a>
                 </li>
                 <li>
-                  <a href="/">Sponsor</a>
+                  <a
+                    href="https://drive.google.com/file/d/1B8mbiknGS_CpwZlu3Txid5XvqCgeQZNE/view?usp=drivesdk"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Sponsor
+                  </a>
                 </li>
               </ul>
             </div>

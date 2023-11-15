@@ -12,7 +12,7 @@ const TeamSection = () => {
       <article className="teamSection__container container">
         
         <div className="teamSection__container--header">
-          <h2>Meet the Organizing Team Leads</h2>
+          <h2>Meet the Organizing Team Leads for GILH 2.0</h2>
         </div>
 
         <div className="teamSection__container--content">

@@ -38,8 +38,19 @@
   }
 }
 
-.btn-mobile {
+.btn-desktop__container {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-mobile__container {
   margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-mobile {
   display: flex;
   align-items: center;
   justify-content: center;

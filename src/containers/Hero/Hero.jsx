@@ -3,6 +3,12 @@ import "./Hero.scss";
 import img from "../../assets/images/Rectangle 55.png";
 import img1 from "../../assets/images/hero-1.jpg";
 import img2 from "../../assets/images/hero-2.jpg";
+import img3 from "../../assets/images/rec1.jpg";
+import img4 from "../../assets/images/rec2.jpg";
+import img5 from "../../assets/images/rec3.jpg";
+import img6 from "../../assets/images/rec4.jpg";
+import img7 from "../../assets/images/rec5.jpg";
+import img8 from "../../assets/images/rec6.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -14,7 +20,7 @@ const Hero = () => {
     <section className="hero">
       <article className="hero__container container">
         <div className="hero__container--header">
-          <h1 className="hero__container-title">Great Ife Community Hangout</h1>
+          <h1 className="hero__container-title">Great Ife Hangout Community</h1>
           <p>
             A networking community of great Ife students and alumni thats serves
             as a model and inspires other educational and related institutions
@@ -42,6 +48,24 @@ const Hero = () => {
               </SwiperSlide>
               <SwiperSlide className="swiper-slide">
                 <img src={img2} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img3} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img4} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img5} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img6} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img7} alt="hero" />
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide">
+                <img src={img8} alt="hero" />
               </SwiperSlide>
             </Swiper>
           </div>

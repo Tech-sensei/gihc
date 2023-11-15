@@ -7,6 +7,8 @@ import SponsorSection from "../../containers/SponsorSection/SponsorSection";
 import Whyjoin from "../../containers/Whyjoin/Whyjoin";
 import TeamSection from "../../containers/TeamSection/TeamSection";
 import Testimonial from "../../containers/Tesmonial/Testimonial";
+import AbujaSection from "../../containers/Abujasection/AbujaSection";
+
 
 const Home = () => {
   return (
@@ -16,6 +18,7 @@ const Home = () => {
       <SponsorSection />
       <Whyjoin />
       <TeamSection />
+      <AbujaSection/>
       <FAQ />
       <Testimonial />
       <CTA />
