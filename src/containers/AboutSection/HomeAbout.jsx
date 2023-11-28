@@ -63,7 +63,7 @@ const HomeAbout = () => {
             </div>
 
             <div className="homeAbout__btn">
-              <Link to="/">
+              <Link to="https://tix.africa/discover/greatifelh" target="_blank">
                 <button className="btn">
                   <span>Get your Ticket</span>
                 </button>

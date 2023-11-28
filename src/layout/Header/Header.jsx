@@ -107,18 +107,26 @@ const Header = () => {
                 <button className="btn btn-mobile" onClick={toggleLogoutModal}>
                   <span>Vendor Application</span>
                 </button>
-
-                <Button className={"btn btn-mobile"} text={"Get your Ticket"} />
+                <Link
+                  to="https://tix.africa/discover/greatifelh"
+                  target="_blank"
+                >
+                  <Button
+                    className={"btn btn-mobile"}
+                    text={"Get your Ticket"}
+                  />
+                </Link>
               </div>
             </ul>
           </div>
 
           <div className="btn-desktop__container">
-            
             <button className="btn btn-desktop" onClick={toggleLogoutModal}>
               <span>Vendor Application</span>
             </button>
-            <Button className={"btn btn-desktop"} text={"Get your Ticket"} />
+            <Link to="https://tix.africa/discover/greatifelh" target="_blank">
+              <Button className={"btn btn-desktop"} text={"Get your Ticket"} />
+            </Link>
           </div>
 
           <div className="nav__toggle">
